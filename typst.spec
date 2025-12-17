@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:		typst
-Version:	0.14.1
+Version:	0.14.2
 Release:	1
 Source0:	https://github.com/typst/typst/archive/v%{version}/%{name}-%{version}.tar.gz
 Source1:    %{name}-%{version}-vendor.tar.gz
@@ -24,9 +24,9 @@ cat >> .cargo/config.toml << EOF
 [source.crates-io]
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/typst/typst-dev-assets?tag=v0.14.1"]
+[source."git+https://github.com/typst/typst-dev-assets?tag=v%{version}"]
 git = "https://github.com/typst/typst-dev-assets"
-tag = "v0.14.1"
+tag = "v%{version}"
 replace-with = "vendored-sources"
 
 [source.vendored-sources]
