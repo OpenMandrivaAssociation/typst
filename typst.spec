@@ -2,7 +2,7 @@
 
 Name:		typst
 Version:	0.14.2
-Release:	1
+Release:	2
 Source0:	https://github.com/typst/typst/archive/v%{version}/%{name}-%{version}.tar.gz
 Source1:    %{name}-%{version}-vendor.tar.gz
 Summary:	A new markup-based typesetting system that is powerful and easy to learn
